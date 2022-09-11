@@ -1,0 +1,11 @@
+.wrapper {
+    max-width: 1340px;
+    padding-inline: 1.5rem;
+    margin-inline: auto;
+    overflow: hidden;
+
+    @mixin atLarge {
+        padding-inline: 3.125rem;
+
+    }
+}
