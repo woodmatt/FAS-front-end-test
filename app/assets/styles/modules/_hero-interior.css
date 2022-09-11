@@ -1,0 +1,8 @@
+.hero-interior {
+    color: $mainBlueDark;
+
+    &__headline {
+        font-size: 3.625rem;
+        font-weight: 400;
+    }
+}
