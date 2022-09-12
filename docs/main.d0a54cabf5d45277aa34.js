@@ -1,1 +1,0 @@
-(()=>{"use strict";for(var e=document.getElementById("link-row").getElementsByTagName("button"),t=0;t<e.length;t++)e[t].addEventListener("click",(function(){document.querySelector(".menuActive")&&document.querySelector(".menuActive").classList.remove("menuActive"),this.classList.add("menuActive")}))})();
