@@ -34,20 +34,27 @@
         font-weight: 600;
         text-decoration: none;
         position: relative;
+        overflow: hidden;
     }
 
-    &__link:after {
+    &__link::after {
         content: '';
-        background-image: url('/app/assets/images/triangle-blue.svg');
-        background-size: 13px 12px;
-        display: block;
         position: absolute;
-        width: 13px;
-        height: 12px;
-        left: 210px;
+        top: 22px;
+        left: 0;
+        width: 50%;
+        height: 2px;
+        background-color: $mainBlueLight;
+        opacity: 1;
+        transition: opacity 300ms, transform 300ms;
+        transform: translate3d(-100%, 0, 0);
     }
 
-
+    &__link:hover::after,
+    &__link:focus::after {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
 
     &__green-line {
         grid-column: 1 / span 6;
