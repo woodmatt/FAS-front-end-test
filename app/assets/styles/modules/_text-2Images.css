@@ -1,0 +1,70 @@
+.text-2Images {
+    margin-top: 6.188rem;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap:  0 1.375rem;
+
+    &__headline {
+        color: $mainBlueLight;
+        font-size: 2rem;
+        font-weight: 600;
+        line-height: 2.375rem;
+        grid-column: 1 / span 5;
+        grid-row: 1 / span 2;
+    }
+    
+    &__description {
+        color: $mainGreyLight;
+        font-size: 1.5rem;
+        font-weight: 200;
+        grid-column: 2 / span 5;
+        grid-row: 3 / span 2;
+        align-self: center;
+        border-left: 1px solid $mainBlueLight;
+        padding-left: 1.375rem;
+        transform: translateX(-1.375rem);
+    }
+
+    &__link {
+        grid-column: 2 / span 4;
+        grid-row: 5 / span 1;
+        font-size: 1rem;
+        color: $mainBlueLight;
+        font-weight: 600;
+        text-decoration: none;
+        position: relative;
+    }
+
+    &__link:after {
+        content: '';
+        background-image: url('/app/assets/images/triangle-blue.svg');
+        background-size: 13px 12px;
+        display: block;
+        position: absolute;
+        width: 13px;
+        height: 12px;
+        left: 210px;
+    }
+
+
+
+    &__green-line {
+        grid-column: 1 / span 6;
+        grid-row: 6 / span 1;
+        height: 6px;
+        background-color: $mainGreen;
+    }
+
+    &__top-right {
+        grid-column: 7 / span 4;
+        grid-row: 1 / span 3;
+        border-bottom: 3px solid $mainGreen;
+    }
+
+    &__bottom-right {
+        grid-column: 9 / span 4;
+        grid-row: 4 / span 3;
+        border-bottom: 3px solid $mainGreen;
+    }
+}
