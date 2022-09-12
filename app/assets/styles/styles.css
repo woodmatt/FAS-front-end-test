@@ -1,8 +1,9 @@
 @import 'normalize.css';
-@import 'base/_global.css';
 @import 'base/_variables.css';
+@import 'base/_global.css';
 @import 'base/_mixins.css';
 
 @import 'modules/_hero-interior';
 @import 'modules/_wrapper.css';
 @import 'modules/_text-2Images.css';
+@import 'modules/_our-services.css';
